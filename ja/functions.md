@@ -65,7 +65,6 @@
 |Y||
 |Z||
 |BRACKET_LEFT|[|
-|BACKSLASH|\\|
 |BRACKET_RIGHT|]|
 |CARET|^|
 |UNDERSCORE|_|
