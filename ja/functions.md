@@ -1,143 +1,137 @@
-BS
-TAB = 0x09,
-  F_ENTER = 0x0a,
-  F_ESC = 0x1b,
-
-  F_SPACE = 0x20,
-  F_EXCL = 0x21,
-  F_DQUOTE = 0x22,
-  F_HASH = 0x23,
-  F_DOLLAR = 0x24,
-  F_PERCENT = 0x25,
-  F_AMPERSAND = 0x26,
-  F_QUOTE = 0x27,
-  F_PAREN_LEFT = 0x28,
-  F_PAREN_RIGHT = 0x29,
-  F_ASTERISK = 0x2A,
-  F_PLUS = 0x2B,
-  F_COMMA = 0x2C,
-  F_MINUS = 0x2D,
-  F_PERIOD = 0x2E,
-  F_SLASH = 0x2F,
-
-  F_0 = 0x30,
-  F_1 = 0x31,
-  F_2 = 0x32,
-  F_3 = 0x33,
-  F_4 = 0x34,
-  F_5 = 0x35,
-  F_6 = 0x36,
-  F_7 = 0x37,
-  F_8 = 0x38,
-  F_9 = 0x39,
-
-  F_COLON = 0x3A,
-  F_SEMICOLON = 0x3B,
-  F_ANGLE_LEFT = 0x3C,
-  F_EQUAL = 0x3D,
-  F_ANGLE_RIGHT = 0x3E,
-  F_QUESTION = 0x3F,
-  F_AT = 0x40,
-
-  F_A = 0x41,
-  F_B = 0x42,
-  F_C = 0x43,
-  F_D = 0x44,
-  F_E = 0x45,
-  F_F = 0x46,
-  F_G = 0x47,
-  F_H = 0x48,
-  F_I = 0x49,
-  F_J = 0x4A,
-  F_K = 0x4B,
-  F_L = 0x4C,
-  F_M = 0x4D,
-  F_N = 0x4E,
-  F_O = 0x4F,
-  F_P = 0x50,
-  F_Q = 0x51,
-  F_R = 0x52,
-  F_S = 0x53,
-  F_T = 0x54,
-  F_U = 0x55,
-  F_V = 0x56,
-  F_W = 0x57,
-  F_X = 0x58,
-  F_Y = 0x59,
-  F_Z = 0x5A,
-
-  F_BRACKET_LEFT = 0x5B,
-  F_BACKSLASH = 0x5C,
-  F_BRACKET_RIGHT = 0x5D,
-  F_CARET = 0x5E,
-  F_UNDERSCORE = 0x5F,
-  F_GRAVE = 0x60,
-
-  F_a = 0x61,
-  F_b = 0x62,
-  F_c = 0x63,
-  F_d = 0x64,
-  F_e = 0x65,
-  F_f = 0x66,
-  F_g = 0x67,
-  F_h = 0x68,
-  F_i = 0x69,
-  F_j = 0x6A,
-  F_k = 0x6B,
-  F_l = 0x6C,
-  F_m = 0x6D,
-  F_n = 0x6E,
-  F_o = 0x6F,
-  F_p = 0x70,
-  F_q = 0x71,
-  F_r = 0x72,
-  F_s = 0x73,
-  F_t = 0x74,
-  F_u = 0x75,
-  F_v = 0x76,
-  F_w = 0x77,
-  F_x = 0x78,
-  F_y = 0x79,
-  F_z = 0x7A,
-
-  F_BRACE_LEFT = 0x7B,
-  F_PIPE = 0x7C,
-  F_BRACE_RIGHT = 0x7D,
-  F_TILDE = 0x7E,
-
-  F_CAPSLOCK = 0x80,
-  F_F1 = 0x81,
-  F_F2 = 0x82,
-  F_F3 = 0x83,
-  F_F4 = 0x84,
-  F_F5 = 0x85,
-  F_F6 = 0x86,
-  F_F7 = 0x87,
-  F_F8 = 0x88,
-  F_F9 = 0x89,
-  F_F10 = 0x8A,
-  F_F11 = 0x8B,
-  F_F12 = 0x8C,
-  F_PRINT_SCREEN = 0x8D,
-  F_SCROLL_LOCK = 0x8E,
-  F_PAUSE = 0x8F,
-  F_INSERT = 0x90,
-  F_HOME = 0x91,
-  F_PAGE_UP = 0x92,
-  F_DELETE = 0x93,
-  F_END = 0x94,
-  F_PAGE_DOWN = 0x95,
-  F_ARROW_RIGHT = 0x96,
-  F_ARROW_LEFT = 0x97,
-  F_ARROW_DOWN = 0x98,
-  F_ARROW_UP = 0x99,
-  F_NUM_LOCK = 0x9A,
-
-  F_HANZEN = 0x9B,
-  F_HIRAKANA = 0x9C,
-  F_YEN = 0x9D,
-  F_CONVERT = 0x9E,
-  F_NOCONVERT = 0x9F,
+### OSへ送信できる文字・コントロールコード
+|キー|説明|
+|:----|:----|
+|BS|Backspace|
+|TAB||
+|ENTER||
+|ESC||
+|SPACE||
+|EXCL||
+|DQUOTE|"|
+|HASH|#|
+|DOLLAR|$|
+|PERCENT|%|
+|AMPERSAND|&|
+|QUOTE|'|
+|PAREN_LEFT|(|
+|PAREN_RIGHT|)|
+|ASTERISK|*|
+|PLUS|+|
+|COMMA|,|
+|MINUS|-|
+|PERIOD|.|
+|SLASH|/|
+|0||
+|1||
+|2||
+|3||
+|4||
+|5||
+|6||
+|7||
+|8||
+|9||
+|COLON|:|
+|SEMICOLON|;|
+|ANGLE_LEFT|<|
+|EQUAL|=|
+|ANGLE_RIGHT|>|
+|QUESTION|?|
+|AT|@|
+|A||
+|B||
+|C||
+|D||
+|E||
+|F||
+|G||
+|H||
+|I||
+|J||
+|K||
+|L||
+|M||
+|N||
+|O||
+|P||
+|Q||
+|R||
+|S||
+|T||
+|U||
+|V||
+|W||
+|X||
+|Y||
+|Z||
+|BRACKET_LEFT|[|
+|BACKSLASH|\\|
+|BRACKET_RIGHT|]|
+|CARET|^|
+|UNDERSCORE|_|
+|GRAVE|`|
+|a||
+|b||
+|c||
+|d||
+|e||
+|f||
+|g||
+|h||
+|i||
+|j||
+|k||
+|l||
+|m||
+|n||
+|o||
+|p||
+|q||
+|r||
+|s||
+|t||
+|u||
+|v||
+|w||
+|x||
+|y||
+|z||
+|BRACE_LEFT|{|
+|PIPE|\||
+|BRACE_RIGHT|}|
+|TILDE||
+|CAPSLOCK||
+|F1||
+|F2||
+|F3||
+|F4||
+|F5||
+|F6||
+|F7||
+|F8||
+|F9||
+|F10||
+|F11||
+|F12||
+|PRINT_SCREEN||
+|SCROLL_LOCK||
+|PAUSE||
+|INSERT||
+|HOME||
+|PAGE_UP||
+|DELETE||
+|END||
+|PAGE_DOWN||
+|ARROW_RIGHT||
+|ARROW_LEFT||
+|ARROW_DOWN||
+|ARROW_UP||
+|NUM_LOCK||
+|HANZEN||
+|HIRAKANA||
+|YEN||
+|CONVERT||
+|NOCONVERT||
 
 // SEVERAL FUNCTIONS: 0xB0 <= code < 0xD0
   F_TAPADVANCED = 0xB0,
