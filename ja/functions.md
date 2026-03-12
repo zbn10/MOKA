@@ -8,7 +8,7 @@
 |ENTER||
 |ESC||
 |SPACE||
-|EXCL||
+|EXCL|!|
 |DQUOTE|"|
 |HASH|#|
 |DOLLAR|$|
