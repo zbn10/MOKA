@@ -1,4 +1,6 @@
-### OSへ送信できる文字・コントロールコード
+# キーマップ上で、各入力キーに設定できるタイピング文字や機能の一覧。
+
+### 通常のタイピング動作に使える文字・コントロール
 |キー|説明|
 |:----|:----|
 |BS|Backspace|
@@ -65,7 +67,7 @@
 |Y||
 |Z||
 |BRACKET_LEFT|[|
-|BACKSLASH|\\\|
+|BACKSLASH|\\ |
 |BRACKET_RIGHT|]|
 |CARET|^|
 |UNDERSCORE|_|
@@ -99,7 +101,7 @@
 |BRACE_LEFT|{|
 |PIPE|\||
 |BRACE_RIGHT|}|
-|TILDE||
+|TILDE|~|
 |CAPSLOCK||
 |F1||
 |F2||
@@ -122,80 +124,84 @@
 |DELETE||
 |END||
 |PAGE_DOWN||
-|ARROW_RIGHT||
-|ARROW_LEFT||
-|ARROW_DOWN||
-|ARROW_UP||
+|ARROW_RIGHT|→|
+|ARROW_LEFT|←|
+|ARROW_DOWN|↓|
+|ARROW_UP|↑|
 |NUM_LOCK||
-|HANZEN||
-|HIRAKANA||
-|YEN||
-|CONVERT||
-|NOCONVERT||
+|HANZEN|半角/全角(JPレイアウトのみ)|
+|HIRAKANA|ひらかな(JPレイアウトのみ)|
+|YEN|円(JPレイアウトのみ)|
+|CONVERT|変換(JPレイアウトのみ)|
+|NOCONVERT|無変換(JPレイアウトのみ)|
+|CTRL_LEFT||
+|SHIFT_LEFT||
+|ALT_LEFT||
+|GUI_LEFT|Windowsキー(Win)/Commandキー(Mac)|
+|CTRL_RIGHT||
+|SHIFT_RIGHT||
+|ALT_RIGHT||
+|GUI_RIGHT|Windowsキー(Win)/Commandキー(Mac)|
 
-// SEVERAL FUNCTIONS: 0xB0 <= code < 0xD0
-  F_TAPADVANCED = 0xB0,
-  F_KBDPROTO = 0xB1,
-  F_JIGGLER = 0xB2,
-  F_BRIGHTNESS = 0xBD,
-  F_BRIGHTDOWN = 0xBE,
-  F_BRIGHTUP = 0xBF,
-  F_KLED_BACKLIGHT = 0xC0,
-  F_MCU_RESET = 0xC2,
-  F_CHG_OLED = 0xC3,
-  F_KBD_RESET = 0xC4,
-  F_TGL_OSLAYOUT = 0xC5,
-  F_CHG_PROFD = 0xC6,
-  F_CHG_PROF0 = 0xC7,
-  F_CHG_PROF1 = 0xC8,
-  F_CHG_PROF2 = 0xC9,
-  F_CHG_PROF3 = 0xCA,
+### キーボードの動作を指定する機能
+|機能名|説明|
+|:----|:----|
+|TAPADVANCED|タップ動作(ノーマル/拡張)切替|
+|KBDPROTO|HIDキーボードプロトコル(Boot/Feature)切替|
+|JIGGLER|マウス/タッチパッドのジグラー発動|
+|BRIGHTNESS|LEDの明るさ自動調整|
+|BRIGHTDOWN|LEDの明るさダウン|
+|BRIGHTUP|LEDの明るさアップ|
+|KLED_BACKLIGHT|キーLEDのバックライト点灯On/Off|
+|MCU_RESET|未実装|
+|CHG_OLED|OLEDディスプレイの表示内容切替|
+|KBD_RESET|キーボード再起動|
+|TGL_OSLAYOUT|送信するキーコード体系切替(JP/EN)|
+|CHG_PROFD|キーマップ(Default)読込|
+|CHG_PROF0|キーマップ(プロファイル0番)読込|
+|CHG_PROF1|キーマップ(プロファイル1番)読込|
+|CHG_PROF2|キーマップ(プロファイル2番)読込|
+|CHG_PROF3|キーマップ(プロファイル3番)読込|
 
-  // POINTING DEVICE: code & 0xF0 = 0xD0
-  // MOUSE
-  F_MBTN_LEFT = 0xD0,
-  F_MBTN_RIGHT = 0xD1,
-  F_MBTN_MIDDLE = 0xD2,
-  F_MBTN_BW = 0xD3,
-  F_MBTN_FW = 0xD4,
-  F_M_WHEEL = 0xD5,
-  F_MOUSE_MOVE = 0xD6,
-  // TOUCHPAD
-  F_TOUCHPAD_SCROLL = 0xD7,
-  F_TOUCHPAD_MOUSE = 0xD8,
-  F_TOUCHPAD_ENABLE = 0xD9,
-  F_TOUCHPAD_LEFT = 0xDA,
-  F_TOUCHPAD_LEFT2X = 0xDB,
-  F_TOUCHPAD_RIGHT = 0xDC,
-  F_TOUCHPAD_RIGHT2X = 0xDD,
-  F_TOUCHPAD_BTN_LEFT = 0xDE,
-  F_TOUCHPAD_BTN_RIGHT = 0xDF,
+### マウス動作
+|機能名|説明|
+|:----|:----|
+|MBTN_LEFT|左ボタン送信|
+|MBTN_RIGHT|右ボタン送信|
+|MBTN_MIDDLE|センターボタン送信|
+|MBTN_BW|戻るボタン送信|
+|MBTN_FW|進むボタン送信|
+|M_WHEEL|ホイール動作送信|
 
-  // MODIFIER: code & 0xF8 = 0xE0
-  F_CTRL_LEFT = 0xE0,
-  F_SHIFT_LEFT = 0xE1,
-  F_ALT_LEFT = 0xE2,
-  F_GUI_LEFT = 0xE3,
-  F_CTRL_RIGHT = 0xE4,
-  F_SHIFT_RIGHT = 0xE5,
-  F_ALT_RIGHT = 0xE6,
-  F_GUI_RIGHT = 0xE7,
+### タッチパッド動作
+|機能名|説明|
+|:----|:----|
+|TOUCHPAD_SCROLL|円形ジェスチャーによる縦スクロール|
+|TOUCHPAD_MOUSE|タッチパッドのタッチパッドモード/マウスモード切替|
+|TOUCHPAD_ENABLE|タッチパッドOn/Off切替|
+|TOUCHPAD_LEFT|仮想タッチパッドの左側移動|
+|TOUCHPAD_LEFT2X|仮想タッチパッド左側の2倍速移動|
+|TOUCHPAD_RIGHT|仮想タッチパッドの右側移動|
+|TOUCHPAD_RIGHT2X|仮想タッチパッド右側の2倍速移動|
+|TOUCHPAD_BTN_LEFT|仮想タッチパッド左ボタン送信|
+|TOUCHPAD_BTN_RIGHT|仮想タッチパッド右ボタン送信|
 
-  // MACRO: code & 0xF8 = 0xE8
-  F_MACRO00 = 0xE8,
-  F_MACRO01 = 0xE9,
-  F_MACRO02 = 0xEA,
-  F_MACRO03 = 0xEB,
-  F_MACRO04 = 0xEC,
-  F_MACRO05 = 0xED,
-  F_MACRO06 = 0xEE,
-  F_COPILOT = 0xEF,
+### キーマクロ
+|機能名|説明|
+|:----|:----|
+|MACRO00|キーマクロ0送信|
+|MACRO01|キーマクロ1送信|
+|MACRO02|キーマクロ2送信|
+|MACRO03|キーマクロ3送信|
+|MACRO04|キーマクロ4送信|
+|MACRO05|キーマクロ5送信|
+|MACRO06|キーマクロ6送信|
+|COPILOT|Windows Copilotキー送信|
 
-  // LAYER: code & 0xF0 = 0xF0
-  F_LAYER_CALIBRATION = 0xF0,
-  F_EXIT_EMERGENCY = 0xF1,
-  F_LAYER_1 = 0xF2,
-  F_LAYER_2 = 0xF3,
-  F_LAYER_3 = 0xF4,
-  F_LAYER_HOLD = 0xF5,
-   
+### キーレイヤ制御
+|機能名|説明|
+|:----|:----|
+|LAYER_1|レイヤー1選択|
+|LAYER_2|レイヤー2選択|
+|LAYER_3|レイヤー3選択|
+|LAYER_HOLD|選択レイヤーロック|
