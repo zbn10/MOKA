@@ -180,10 +180,10 @@
 |TOUCHPAD_SCROLL|円形ジェスチャーによる縦スクロール|
 |TOUCHPAD_MOUSE|タッチパッドのタッチパッドモード/マウスモード切替|
 |TOUCHPAD_ENABLE|タッチパッドOn/Off切替|
-|TOUCHPAD_LEFT|仮想タッチパッドの左側移動|
-|TOUCHPAD_LEFT2X|仮想タッチパッド左側の2倍速移動|
-|TOUCHPAD_RIGHT|仮想タッチパッドの右側移動|
-|TOUCHPAD_RIGHT2X|仮想タッチパッド右側の2倍速移動|
+|TOUCHPAD_LEFT|仮想タッチパッドの左側タッチ操作|
+|TOUCHPAD_LEFT2X|仮想タッチパッド左側の2倍拡大タッチ操作|
+|TOUCHPAD_RIGHT|仮想タッチパッドの右側タッチ操作|
+|TOUCHPAD_RIGHT2X|仮想タッチパッド右側の2倍拡大タッチ操作|
 |TOUCHPAD_BTN_LEFT|仮想タッチパッド左ボタン送信|
 |TOUCHPAD_BTN_RIGHT|仮想タッチパッド右ボタン送信|
 
