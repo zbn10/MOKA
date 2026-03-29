@@ -146,12 +146,15 @@ gantt
     dateFormat DD
     axisFormat %d
     tickInterval 1day
-    section キー0
-        全押し (= a)  :active, a1, 01, 2d
+    section キー0状態
+        全押し  :a1, 01, 2d
         リリース     :done, a2, after a1, 2d
-        全押し (= @)  :active, a3, after a2, 2d
-    section レイヤ2キー
-        Push (L2)   :b1, 02, 4d
+        全押し  :a3, after a2, 2d
+    section レイヤ2選択状態
+        L2選択   :b1, 02, 4d
+    section キー0入力
+        a         :active, a1, 01, 2d
+        @         :active, a3, after a2, 2d
 ```
 
 Alt + Shift + Space のように複数同時押しが必要なショートカットなどで、それぞれ別レイヤにアサインされていても、順番に押していけば送信できます。ちょっとした慣れは必要です。
@@ -166,10 +169,10 @@ gantt
     tickInterval 1day
     section レイヤ1キー
         L1         :active, a1, 01, 1d
-        L1        :done, a2, after a1, 1d
+        L1(負け)        :done, a2, after a1, 1d
         L1         :active, a3, after a2, 1d
     section レイヤ2キー
-        L2         :active, b1, 02, 1d
+        L2(勝ち)         :active, b1, 02, 1d
 ```
 
 #### 3.2.3 文字・機能アサインがないキー状態は無視
@@ -188,7 +191,7 @@ gantt
         タップ        :b2, after b1, 1d
         長押し1        :b3, after b2, 1d
         長押し2        :b4, after b3, 1d
-    section キー0
+    section キー0入力
         a         :active, a1, 01, 1d
         a         :active, a2, after a1, 1d
         a         :active, a3, after a2, 1d
@@ -212,7 +215,7 @@ gantt
         タップ        :b2, after b1, 1d
         長押し1        :b3, after b2, 1d
         長押し2        :b4, after b3, 1d
-    section キー0
+    section キー0入力
         Ctrl         :active, a1, 01, 1d
         Ctrl         :active, a2, after a1, 1d
         a         :active, a3, after a2, 1d
