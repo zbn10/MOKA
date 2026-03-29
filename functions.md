@@ -177,15 +177,15 @@
 ## タッチパッド動作
 |機能名|エディタ表記|説明|
 |:----|:----|:----|
-|TOUCHPAD_SCROLL|TP_SC|円形ジェスチャーによる縦スクロール|
-|TOUCHPAD_MOUSE|TP_M|タッチパッドのタッチパッドモード/マウスモード切替|
-|TOUCHPAD_ENABLE|TP_EN|タッチパッドOn/Off切替|
-|TOUCHPAD_LEFT|TP_L|仮想タッチパッドの左側タッチ操作|
-|TOUCHPAD_LEFT2X|TP_L2|仮想タッチパッド左側の2倍拡大タッチ操作|
-|TOUCHPAD_RIGHT|TP_R|仮想タッチパッドの右側タッチ操作|
-|TOUCHPAD_RIGHT2X|TP_R2|仮想タッチパッド右側の2倍拡大タッチ操作|
-|TOUCHPAD_BTN_LEFT|TP_BL|仮想タッチパッド左ボタン送信|
-|TOUCHPAD_BTN_RIGHT|TP_BR|仮想タッチパッド右ボタン送信|
+|TOUCHPAD_SCROLL|TP_SC|円形ジェスチャーによる縦スクロール<br>これをキーに割り当てて、キーを押しながらタッチパッドをなぞる|
+|TOUCHPAD_MOUSE|TP_M|タッチパッドのタッチパッドモード/マウスモード切替<br>キーに割り当てる|
+|TOUCHPAD_ENABLE|TP_EN|タッチパッドOn/Off切替<br>キーに割り当てる|
+|TOUCHPAD_LEFT|TP_L|仮想タッチパッドの左側タッチ操作<vr>内部的にレイヤ0に割り当て済み|
+|TOUCHPAD_LEFT2X|TP_L2|仮想タッチパッド左側の2倍拡大タッチ操作<br>個別キーマップ設定でタッチパッドに割り当てる。レイヤは0以外|
+|TOUCHPAD_RIGHT|TP_R|仮想タッチパッドの右側タッチ操作<br>内部的にレイヤ0に割り当て済み|
+|TOUCHPAD_RIGHT2X|TP_R2|仮想タッチパッド右側の2倍拡大タッチ操作<br>個別キーマップ設定でタッチパッドに割り当てる。レイヤは0以外|
+|TOUCHPAD_BTN_LEFT|TP_BL|仮想タッチパッド左ボタン送信<br>キーに割り当てる|
+|TOUCHPAD_BTN_RIGHT|TP_BR|仮想タッチパッド右ボタン送信<br>キーに割り当てる|
 
 ## キーマクロ
 |機能名|エディタ表記|説明|
