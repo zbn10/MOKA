@@ -1,13 +1,13 @@
 
 ### 3.2 タイピングにかかわるキーボード動作
 
-[3.2.1 一旦押したら離すまでは同じ文字・機能](#function_fixing)
-[3.2.2 レイヤ選択キーの同時押しは、数字の大きいレイヤが有効](#layerconflict)
-[3.2.3 文字・機能アサインがないキー状態は無視](#noassignkey)
-[3.2.4 タップ動作](#tap)
-[3.2.5 タッチパッド動作のレイヤ配置](#touchpadonlayers)
-[3.2.6 レイヤホールド](#layerhold)
-[3.2.7 タッチパッドの円形ジェスチャースクロール](#circulargesturescroll)
+* [3.2.1 一旦押したら離すまでは同じ文字・機能](#function_fixing)
+* [3.2.2 レイヤ選択キーの同時押しは、数字の大きいレイヤが有効](#layerconflict)
+* [3.2.3 文字・機能アサインがないキー状態は無視](#noassignkey)
+* [3.2.4 タップ動作](#tap)
+* [3.2.5 タッチパッド動作のレイヤ配置](#touchpadonlayers)
+* [3.2.6 レイヤホールド](#layerhold)
+* [3.2.7 タッチパッドの円形ジェスチャースクロール](#circulargesturescroll)
 
 
 <a id="function_fixing"></a>
