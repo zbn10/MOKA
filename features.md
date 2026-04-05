@@ -188,7 +188,7 @@ gantt
 |通常動作<br>TOUCHPAD_L/R|倍速動作<br>TOUCHPAD_L2/R2|
 
 ---
-<a id="kayerhold"></a>
+<a id="layerhold"></a>
 #### 3.2.6 レイヤホールド
 CapsLock で大文字固定と似たような機能で、レイヤキーを押しっぱなしにしなくてもレイヤを固定する機能です。  
 キーマップエディタ上の LHold です。
