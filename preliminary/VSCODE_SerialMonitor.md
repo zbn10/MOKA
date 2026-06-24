@@ -2,11 +2,13 @@
 
 ## 1. Serial Monitor エクステンションのインストール
 Microsoft 謹製の Serial Monitor エクステンションをインストール
+
 ![Extension](extension.png)
 
 ---
 ## 2. VS CODE のパネル表示
 VS CODE 右上にあるペイン選択ボタンの中からパネルを表示
+
 ![Panel](panel.png)
 
 ---
